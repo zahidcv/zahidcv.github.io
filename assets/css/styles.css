@@ -41,7 +41,7 @@ body {
   background-color: white;
   /* border: black solid 0.5px; */
   border-radius: 10px;
-  font-family: roboto, "Lucida Console", "Courier New", monospace;
+  font-family: 'Spectral', "Lucida Console", "Courier New", monospace;
   /* font-family: Verdana, Arial, Helvetica, sans-serif; */
   font-size: 20px;
   text-align: justify;
