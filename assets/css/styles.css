@@ -53,3 +53,7 @@ a{
   color: black;
 }
 
+.pg{
+  max-width: 5px;
+  max-height: 5px;
+}
