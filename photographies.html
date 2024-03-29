@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photographies</title>
+    <title>MD. Zahidul Islam</title>
     <script src="https://kit.fontawesome.com/859be4586c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
-
+  <link rel="stylesheet" href="assets/css/photography.css">
 </head>
-<body onload="process_photos()">
-    <nav class="navbar navbar-expand-lg navbar-light  mx-5">
-        <a class="navbar-brand" href="#">MD. Zahidul Islam</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Publications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="photographies.html">Photographies</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <!--!  -->
+<body> 
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <ul>
-          <h1> This Page is Under Construction! </h1>
+  <nav class="navbar navbar-expand-lg navbar-light  mx-5">
+    <a class="navbar-brand" href="/">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/#publications">Publications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/#extra">Extra Curricular</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="photographies.html">Photographies</a>
+            </li>
         </ul>
-      </div>
     </div>
+</nav>
+
+<div class="wrapper m-5">
+  Site Under constructions. These Photos are placeholders.
+  <div class="masonry">
+    
   </div>
+</div>
 
-  
+
+  <script>
+    const imagePaths = [
+      // "/Users/zahidulislam/Documents/Projects/zahidcv.github.io/assets/img/to_print.jpeg",
+      "https://drscdn.500px.org/photo/1089293148/q%3D90_m%3D2048/v2?sig=0e6fbca06ec259796b414d0d88dea56ea6cff201733f67d5565be3d2ba0587ed",
+      'https://drscdn.500px.org/photo/1089310539/q%3D90_m%3D2048_k%3D1/v2?sig=c89563fd00e54af6c1af0197d4b0f75b7a558826f7824972031fc1ea60be1a82',
+      "https://images.unsplash.com/photo-1707343848610-16f9afe1ae23?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://source.unsplash.com/random/400",
+      "https://source.unsplash.com/random/500",
+      "https://source.unsplash.com/random/600",
+      "https://source.unsplash.com/random/700",
+      "https://source.unsplash.com/random/840",
+      "https://source.unsplash.com/random/920",
+      "https://source.unsplash.com/random/1010",
+      "https://source.unsplash.com/random/1170",
   
 
-<script src="process_photos.js"></script>
+      // ... Add more image paths here
+    ];
+    const imageContainer = document.getElementsByClassName("masonry")[0];
+    console.log(imageContainer)
+    imagePaths.forEach(imagePath => {
+      const mItemdiv = document.createElement("div");
+      mItemdiv.className = "mItem"
+
+      const image = document.createElement("img");
+      image.src = imagePath;
+      mItemdiv.appendChild(image)
+
+      imageContainer.appendChild(mItemdiv);
+      
+
+    });
+  </script>
 </body>
+
 </html>

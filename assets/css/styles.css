@@ -5,9 +5,13 @@ body {
   position: relative
 }
 
+.section{
+  color: #055160;
+}
 .picture {
-  height: 150px;
-  width: 150px;
+  /* transform: scale(1.5); */
+  height: 200px;
+  width: 200px;
   background-color: #eee;
   border-radius: 50%;
   overflow: hidden;
@@ -22,8 +26,8 @@ body {
   object-fit: cover;
 }
 .sidebar {
-  background-color:#E3F4F4;
-  font-family: 'roboto';
+  background-color:#fbfbfb;
+  font-family: 'Spectral';
   /* font-family: Verdana, Arial, Helvetica, sans-serif;
   font-family: Times, "Times New Roman", Georgia, serif; */
 }
@@ -35,18 +39,22 @@ body {
 }
 .basic{
   text-align: center;
+  font-size: 15px;
 }
 
 .aboutme{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   /* border: black solid 0.5px; */
-  border-radius: 10px;
-  font-family: 'Spectral', "Lucida Console", "Courier New", monospace;
-  /* font-family: Verdana, Arial, Helvetica, sans-serif; */
-  font-size: 20px;
+  /* border-radius: 10px; */
+  font-family: 'Lato', sans-serif;
+  /* line-height: 1.5; */
+  font-size: 25px;
+  font-weight: 400;
   text-align: justify;
-  text-justify: inter-word;
+  /* text-justify: inter-word; */
+  color: #1f1f20;
 
+  -webkit-font-smoothing: antialiased;
 }
 
 a{
@@ -56,4 +64,8 @@ a{
 .pg{
   max-width: 5px;
   max-height: 5px;
+}
+
+.social{
+  font-size: 25px;
 }
