@@ -69,3 +69,9 @@ a{
 .social{
   font-size: 25px;
 }
+
+.news{
+ border: 1px solid rgb(161, 159, 159);
+ margin: 2px;
+ padding: 2px;
+}
