@@ -71,7 +71,11 @@ a{
 }
 
 .news{
- border: 1px solid rgb(161, 159, 159);
- margin: 2px;
- padding: 2px;
+ border: 1px solid rgb(232, 229, 229);
+ font-size: 16px;
+ margin-bottom: 10px;
+ padding: 5px;
+}
+.news-date{
+  color: crimson;
 }
